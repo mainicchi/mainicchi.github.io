@@ -1,7 +1,13 @@
 @font-face {
     font-family: myFont;
-    src: url(./NCLHighPrime-Demo.otf) format("opentype");
+    src: url(./font/NCLHighPrime-Demo.otf) format("opentype");
+    font-weight: 800;
   }
+
+.myWorks {
+    font-family: myFont;
+    font-size: 120px;
+}
   
 body {
     background-color: #F3EDD8;
@@ -13,11 +19,8 @@ h1 {
     font-style: normal;
     color: #291900;
     font-size: 100px;
+    line-height: 100px;
 
-}
-
-.myWorks {
-  font-family: myFont;
 }
 
 h2 {
@@ -29,36 +32,15 @@ h2 {
     margin: 0;
 }
 
-h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #291900;
-}
-
-h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: large;
-    color: #291900;
-    font-size: 40px;
-}
-
-h5 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 00;
-    font-style: normal;
-    color: #291900;
-}
-
 p {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #291900;
     margin-block-start: 0;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 0 10px 0;
+    height: 70px;
 }
 
 .navbar {
@@ -70,21 +52,31 @@ p {
     justify-content: space-between;
 }
   
-  .navbar a {
+.navbar a {
     color: #291900;
     text-align: start;
     padding: 15px 15px;
     text-decoration: none;
+    position: relative; 
 }
 
-.navbarIcons {
+  .navbarIcons {
     padding: 15px 5px;
 }
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #291900;
+    transition: bottom 0.3s ease;
+}
   
-
-.navbar a:hover {
-    text-decoration: underline;
-
+.navbar a:hover::after {
+    bottom: 6px;
 }
 
 .content {
@@ -118,6 +110,29 @@ p {
     }
 }
 
+.headText {
+    
+    animation: 3s anim-lineUp ease-out 1;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 .imgBorder {
         border-radius: 5%;
 }
@@ -126,18 +141,19 @@ p {
         background-color: #F3EDD8;
         color: #291900;
         border: solid 2px;
-        padding: 15px 32px;
+        padding: 10px 26px;
         border-radius: 50px;
         text-decoration: none;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-style: normal;
-        font-size: 16px;
+        font-size: 14px;
 }
 
 .button:hover {
         background-color: #291900;
         color: #F3EDD8;
+        border-color: #291900;
 
 }
       
@@ -170,4 +186,100 @@ footer {
     color: #291900;
 
     }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .myWorks {
+        font-size: 90px;
+    }
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #291900;
+        font-size: 60px;
+        line-height: 70px;
+    
+    }
+    
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #291900;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: #291900;
+        margin-block-start: 0;
+        font-size: 16px;
+        padding: 0px 0 10px 0;
+        height: 85px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+       
+        .container-left {
+            width: 100%;
+            padding-top: 70px;
+    
+            > img {
+                max-width: 100%;
+                width: auto;
+                height: auto;
+              }
+        }
+        
+        .container-right {
+            width: 100%;
+            padding-top: 70px;
+    
+            > img {
+              max-width: 100%;
+              width: auto;
+              height: auto;
+            }
+    
+        }
+    }
+
+    footer {
+        background-color:#F3EDD8;
+        color: #291900;
+        text-align: center;
+    
+        .contact {
+          font-family: myFont;
+          font-size: 60px;
+          margin: 0;
+          padding-top: 5%;
+        }
+    
+        .nameLogo
+        {
+          padding: 10% 0% 0% 15px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 20px;
+          line-height: 20px;
+          margin: 0;
+        }
+        
+        > a {
+        color: #291900;
+    
+        }
+    }
+    
+
 }
