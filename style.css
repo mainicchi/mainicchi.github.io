@@ -304,7 +304,6 @@ p {
 
 .myWorktext {
   font-weight: 400;
-  text-align: center;
 }
 
 
@@ -493,6 +492,11 @@ h5 {
 .helloText {
   font-size: 20px;
   line-height: 30px; 
+}
+
+.myWorktext {
+  font-weight: 400;
+  text-align: center;
 }
 
 .pointer {
