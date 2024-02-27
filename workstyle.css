@@ -55,21 +55,23 @@ p {
     top: 0;
     padding: 0 10px 0 10px;
     font-size: 20px;
+    z-index: 1;
   }
   
-.navbar a {
+  .navbar a {
     color: #291900;
     text-align: start;
     padding: 15px 15px;
     text-decoration: none;
     position: relative; 
-}
-
+  }
+  
   .navbarIcons {
     padding: 15px 5px;
-}
-
-.navbar a::after {
+  }
+  
+  
+  .navbar a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -78,11 +80,11 @@ p {
     height: 2px;
     background-color: #291900;
     transition: bottom 0.3s ease;
-}
+  }
   
-.navbar a:hover::after {
+  .navbar a:hover::after {
     bottom: 6px;
-}
+  }
 
 .content {
     display: flex;
