@@ -535,6 +535,9 @@ h5 {
 
   }
 
+  .toolsetBox {
+    padding: 15% 15% 0 15%;
+  }
 
 
   .box {
@@ -550,5 +553,19 @@ h5 {
     margin: 5% 0 5% 0;
     margin: 0 15% 0 15%;
   }
+
+  footer {
+    text-align: center;
+
+    .contact {
+      font-size: 60px;
+    }
+
+    .nameLogo
+    {
+      font-size: 20px;
+      line-height: 20px;
+    }
+}
 
 }
