@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Talvipuutarha</h2>
@@ -31,7 +53,7 @@
 </div>
 
 <div class="container-right mainPic">
-    <img src="./photos/talvipuutarha.jpg" alt="main painovoimaa picture" width="900px" height="675px">
+    <img src="./photos/talvipuutarhamain.png" alt="main talvipuutarha picture" width="900px" height="675px">
 </div>
 </div>
 
@@ -40,7 +62,7 @@
 
     <div class="info role">
         <h3>My role</h3>
-        <p>Social Media Marketing <br>
+        <p class="infoText">Social Media Marketing <br>
             Content Creation
         </p>
     </div>
@@ -48,7 +70,7 @@
 <div class="smallInfo">
     <div class="info year">
         <h3>Year</h3>
-        <p>2021</p>
+        <p class="infoText">2021</p>
     </div>
 
     <div class="info time">
@@ -58,7 +80,7 @@
 
     <div class="info tools">
         <h3>Tools</h3>
-        <p>Adobe XD, Adobe Photoshop, Canva</p>
+        <p class="infoText">Adobe XD, Adobe Photoshop, Canva</p>
     </div>
 </div>
 
@@ -86,7 +108,7 @@
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/talvipuutarha.jpg" alt="new painovoimaa">
+        <img class="imgBorder" src="./photos/talvipuutarha1.png" alt="new talvipuutarha">
     </div>
 
 </div>
@@ -96,7 +118,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

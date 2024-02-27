@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Painovoimaa</h2>
@@ -45,23 +67,23 @@
 
     <div class="info role">
         <h3>My role</h3>
-        <p>UX & UI Designer<br>Website development</p>
+        <p class="infoText">UX & UI Designer<br>Website development</p>
     </div>
 
 <div class="smallInfo">
     <div class="info year">
         <h3>Year</h3>
-        <p>2023</p>
+        <p class="infoText">2023</p>
     </div>
 
     <div class="info time">
         <h3>Timeline</h3>
-        <p>25 weeks</p>
+        <p class="infoText">25 weeks</p>
     </div>
 
     <div class="info tools">
         <h3>Tools</h3>
-        <p>Figma, Adobe Illustrator, Wordpress</p>
+        <p class="infoText">Figma, Adobe Illustrator, Wordpress</p>
     </div>
 </div>
 
@@ -114,7 +136,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

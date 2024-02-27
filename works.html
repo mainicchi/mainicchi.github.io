@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="content">
     <h1 class="headText">Here are some of<br> my  <span class="myWorks">works</span></h1>
 
@@ -54,7 +76,7 @@
 
         <div class="container-left">
             <img class="imgBorder" src="photos/draama.png" alt="draama gallery" width="560" height="370">
-            <h2>Draama Gallery</h2>
+            <h2>Drama Gallery</h2>
             <p>Reform the page structure and content of the website. Additionally unified the look and content of the clients social media channels.</p>
             <a href="./draama.html" class="button">Read more</a>
         </div>
@@ -86,7 +108,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

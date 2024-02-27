@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="content">
     <div class="container-left helloContainer">
         <h1 class="hello">Hello, <br>I'm <span class="myName">Maini</span></h1>
@@ -47,7 +69,7 @@
     <div class="container-right">
         <div class="education">
             <h3 class="experienceFirst">Education</h3>
-            <p class="experienceSecond">Bachelor's degree in <br>Digital design</p>
+            <p class="experienceSecond">Bachelor's degree in Digital Design</p>
             <p class="experienceThird">Metropolia University of<br> Applied Sciences <br>2020 - Present</p>
         
         <h3 class="experienceFirst">Revelent experience</h3>
@@ -55,73 +77,119 @@
             <p class="experienceThird">Painovoimaa <br>2023</p>
             <p class="experienceSecond">UX/UI Designer </p>
             <p class="experienceThird">Demoni ry <br>2023</p>
-            <p class="experienceSecond">UX/UI Designer & Social media expert</p>
-            <p class="experienceThird">Notio design <br>2022</p>
+            <p class="experienceSecond">UX/UI Designer & Social Media Expert</p>
+            <p class="experienceThird">Notio Design <br>2022</p>
         </div>
     </div>
 
     <h2>My basic project workflow</h2>
-    <div class="container-left workflow">
-        <h4>Understand</h4>
-        <h4>Research</h4>
-        <h4>Analyze</h4>
-        <h4>Design</h4>
-        <h4>Launch</h4>
-        <h4>Evaluate</h4>
+
+        <div class="understand box">
+            <div class="container-workflowName">
+                <h4>Understand</h4>
+            </div>
+            <div class="container-workflowDesc">
+                <p>Gain knowledge of users, context, technologies, and the brand. 
+                    The problem of the user has to be identified to later start working towards the solutions. 
+                    Understanding the mission and goals is crucial to get the right answers.</p>
+            </div>
+        </div>
+
+        <div class="research box">
+            <div class="container-workflowName">
+                <h4>Research</h4>
+            </div>
+            <div class="container-workflowDesc">
+                <p>Gathering data by 1:1 interviewing, focus groups, surveys and usability 
+                    testing for example and to base assumptions on real life evidence/data.</p>
+            </div>
+        </div>
+
+        <div class="analyze box">
+            <div class="container-workflowName">
+                <h4>Analyze</h4>
+            </div>
+            <div class="container-workflowDesc">
+                <p>Build user personas (these act as guides) on gathered data. Make user journeys and 
+                    user scenarios to see the bigger picture.</p>
+            </div>
+
+        </div>
+
+        <div class="design box">
+            <div class="container-workflowName">
+                <h4>Design</h4>
+            </div>
+            <div class="container-workflowDesc">
+                <p>Create site maps, user flows and wireframes these are low-fidelity mock-ups. 
+                    From these start building a prototype that takes shape from the collected data </p>
+            </div>
+        </div>
+
+        <div class="launch box">
+            <div class="container-workflowName">
+                <h4>Launch</h4>
+            </div>
+            <div class="container-workflowDesc">
+                <p>Evaluate design with the users to obtain feedback and develop the product in the design team. 
+                Continuous flow of feedback is needed to launch the right product.</p>
+            </div>
+        </div>
+        <div class="evaluate box">
+            <div class="container-workflowName">
+                <h4>Evaluate</h4>
+            </div>
+            <div class="container-workflowDesc">
+             <p>Investigate where the process went right and if the solutios really solved the problem of the users. With this knowledge, future projects will run even more smoothly.</p><br>
+            </div>
+        </div>
     </div>
 
-    <div class="container-right workflow">
-        <p>Gain knowledge of users, context, technologies, and the brand. 
-        The problem of the user has to be identified to later start working towards the solutions. 
-        Understanding the mission and goals is crucial to get the right answers.</p><br>
+<div class="contentTwo">
 
-        <p>Gathering data by 1:1 interviewing, focus groups, surveys and usability testing for example and to base assumptions on real life evidence/data.</p><br>
-        
-        <p>Build user personas (these act as guides) on gathered data. Make user journeys and user scenarios to see the bigger picture.</p><br>
-        
-        <p>Create site maps, user flows, and wireframes (low-fidelity mock-ups) based on gathered data.</p><br>
-        
-        <p>Evaluate design with the users to obtain feedback and develop the product in the design team. Continuous flow of feedback is needed to launch the right product.</p><br>
-       
-        <p>Investigate where the process went right and if the solutios really solved the problem of the users. With this knowledge, future projects will run even more smoothly.</p><br>
-    </div>
-
+<div class="skillsetBox">
     <h2 class="skillsetHeader">My skillset</h2>
 
     <div class="skillset">
         <div>
-        <i class="fa-solid fa-display fa-4x icon"></i>
-        <p class="pSkillet">Content Creation<br>
-            Social media Analytics<br>
-            Marketing Strategies<br>
-            Competitor Analysis</p>
-        </div>
-
-        <div>
         <i class="fa-solid fa-magnifying-glass fa-4x icon"></i>
-        <p class="pSkillet">Usability Testing<br>
+        <p class="pSkillet">
             Benchmarking<br>
             User Research<br>
             Workshops<br>
-            User Testing<br>
-            Facilitations
+            User Testing
         </p>
         </div>
 
         <div>
             <i class="fa-regular fa-pen-to-square fa-4x icon"></i>
-        <p class="pSkillet">Wireframing<br>
+        <p class="pSkillet">
+            Wireframing<br>
             User Flows<br>
             Prototyping<br>
             Design Systems
         </p>
     </div>
 
-    </div>
     <div>
-        <h2>and my toolshead includes</h2>
+        <i class="fa-solid fa-hashtag fa-4x icon"></i>
+        <p class="pSkillet">
+            Content Creation<br>
+            Social media Analytics<br>
+            Marketing Strategies<br>
+            Competitor Analysis</p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="toolsetBox">
+        <h2>and my toolshed includes</h2>
         <img class="toolsPic" src="photos/tools.jpg" alt="tools" width="850px" height="235px">
     </div>
+    </div>
+
 </div>
 
 <footer>
@@ -129,7 +197,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 
 </body>

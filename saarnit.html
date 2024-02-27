@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Saarni Likeit</h2>
@@ -32,7 +54,7 @@
 </div>
 
 <div class="container-right mainPic">
-    <img src="./photos/saarnit.jpg" alt="main painovoimaa picture" width="900px" height="675px">
+    <img src="./photos/saarnitmain.gif" alt="main saarnit picture" width="900px" height="675px">
 </div>
 </div>
 
@@ -41,7 +63,7 @@
 
     <div class="info role">
         <h3>My role</h3>
-        <p>Prototyping<br>
+        <p class="infoText">Prototyping<br>
             UX & UI Designer
         </p>
     </div>
@@ -49,17 +71,17 @@
 <div class="smallInfo">
     <div class="info year">
         <h3>Year</h3>
-        <p>2022</p>
+        <p class="infoText">2022</p>
     </div>
 
     <div class="info time">
         <h3>Timeline</h3>
-        <p>8 weeks</p>
+        <p class="infoText">8 weeks</p>
     </div>
 
     <div class="info tools">
         <h3>Tools</h3>
-        <p>Figma, Miro, Microsoft Office</p>
+        <p class="infoText">Figma, Miro, Microsoft Office</p>
     </div>
 </div>
 
@@ -73,7 +95,7 @@
     </div>
 
     <div class="container-right">
-        <img class="imgBorder" src="./photos/saarnit.jpg" alt="vanha painovoimaa">
+        <img class="imgBorder" src="./photos/saarnit1.png" alt="vanha saarnit">
         <p class="photoText">The old system and how it looks to the user.</p>
     </div>
 
@@ -88,11 +110,11 @@
     </div>
 
     <div class="container-left">
-        <img class="imgBorder" src="./photos/saarnit.jpg" alt="design process for painovoimaa">
+        <img class="imgBorder" src="./photos/saarnit2.png" alt="design process for saarnit">
         <p class="photoText">The design process included benchmarking, user mapping, a workshop and card sorting for user testing</p>
     </div>
     <div class="container-right">
-        <img class="imgBorder" src="./photos/saarnit.jpg" alt="wireframes for painovoimaa">
+        <img class="imgBorder" src="./photos/saarnit3.png" alt="wireframes for saarnit">
         <p class="photoText">As a UX designer, I created the wireframes and prototypes for the mobile and desktop</p>
     </div>
 
@@ -104,11 +126,7 @@
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/saarnit.jpg" alt="new painovoimaa">
-    </div>
-
-    <div class="buttonPlace">
-    <a href="https://demoni.metropolia.fi/" target="https://painovoimaa.metropolia.fi/" class="button">Check out the final result</a>
+        <img class="imgBorder" src="./photos/saarnit4.png" alt="new saarnit">
     </div>
 </div>
 
@@ -117,7 +135,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

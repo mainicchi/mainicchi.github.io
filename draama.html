@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Drama gallery</h2>
@@ -35,7 +57,7 @@
 </div>
 
 <div class="container-right mainPic">
-    <img src="./photos/draama.jpg" alt="main painovoimaa picture" width="900px" height="675px">
+    <img src="./photos/draamamain.png" alt="main painovoimaa picture" width="900px" height="675px">
 </div>
 </div>
 
@@ -44,7 +66,7 @@
 
     <div class="info role">
         <h3>My role</h3>
-        <p>Social media marketing<br>
+        <p class="infoText">Social media marketing<br>
             Content creation<br>
             Prototyping<br>
             Website development
@@ -54,17 +76,17 @@
 <div class="smallInfo">
     <div class="info year">
         <h3>Year</h3>
-        <p>2023</p>
+        <p class="infoText">2023</p>
     </div>
 
     <div class="info time">
         <h3>Timeline</h3>
-        <p>8 weeks</p>
+        <p class="infoText">8 weeks</p>
     </div>
 
     <div class="info tools">
         <h3>Tools</h3>
-        <p>Figma, Adobe Photoshop, Canva, WordPress</p>
+        <p class="infoText">Figma, Adobe Photoshop, Canva, WordPress</p>
     </div>
 </div>
 
@@ -97,7 +119,7 @@
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/draama.jpg" alt="new painovoimaa">
+        <img class="imgBorder" src="./photos/draama1.png" alt="new draama">
     </div>
 
     <div class="container-center">
@@ -112,7 +134,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

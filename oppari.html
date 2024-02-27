@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Digital Design Bachelor Thesis</h2>
@@ -48,7 +70,7 @@
     </div>
     
     <div class="container-left">
-        <img class="imgBorder" src="./photos/oppari.jpg" alt="new painovoimaa">
+        <img class="imgBorder" src="./photos/oppari.png" alt="new painovoimaa">
     </div>
     <div class= "container-right">
     <div class="buttonPlace buttonOppari">
@@ -65,7 +87,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>

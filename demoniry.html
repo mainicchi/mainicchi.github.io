@@ -21,6 +21,28 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script>
+
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Demoni ry</h2>
@@ -31,7 +53,7 @@
 </div>
 
 <div class="container-right mainPic">
-    <img src="./photos/demoniry.jpg" alt="main painovoimaa picture" width="900px" height="675px">
+    <img src="./photos/demonirymain.gif" alt="main demoni ry picture" width="900px" height="675px">
 </div>
 </div>
 
@@ -40,7 +62,7 @@
 
     <div class="info role">
         <h3>My role</h3>
-        <p>UX & UI Designer<br>
+        <p class="infoText">UX & UI Designer<br>
             Website Design<br>
             Website Development</p>
     </div>
@@ -48,17 +70,17 @@
 <div class="smallInfo">
     <div class="info year">
         <h3>Year</h3>
-        <p>2022</p>
+        <p class="infoText">2022</p>
     </div>
 
     <div class="info time">
         <h3>Timeline</h3>
-        <p>13 weeks</p>
+        <p class="infoText">13 weeks</p>
     </div>
 
     <div class="info tools">
         <h3>Tools</h3>
-        <p>Adobe XD, Wordpress</p>
+        <p class="infoText">Adobe XD, Wordpress</p>
     </div>
 </div>
 
@@ -69,7 +91,7 @@
     </div>
 
     <div class="container-right">
-        <img class="imgBorder" src="./photos/demoniry.jpg" alt="vanha painovoimaa">
+        <img class="imgBorder" src="./photos/demoniry1.png" alt="vanha demoni ry">
         <p class="photoText">The old website had outdated infomation and didn't fit the clients vision for the brand.</p>
     </div>
 
@@ -83,11 +105,11 @@
     </div>
 
     <div class="container-left">
-        <img class="imgBorder" src="./photos/demoniry.jpg" alt="design process for painovoimaa">
+        <img class="imgBorder" src="./photos/demoniry2.png" alt="design process for demoni ry">
         <p class="photoText">The design process included sketching, benchmarking and user testing.</p>
     </div>
     <div class="container-right">
-        <img class="imgBorder" src="./photos/demoniry.jpg" alt="wireframes for painovoimaa">
+        <img class="imgBorder" src="./photos/demoniry3.png" alt="wireframes for demoni ry">
         <p class="photoText">As a UX designer, I created the wireframes and prototypes in this project from the new visual identity.</p>
     </div>
 
@@ -97,7 +119,7 @@
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/demoniry.jpg" alt="new painovoimaa">
+        <img class="imgBorder" src="./photos/demoniry4.png" alt="new demoni ry">
     </div>
 
     <div class="buttonPlace">
@@ -110,7 +132,7 @@
     <a href="#"><i class="fa-regular fa-envelope fa-2x"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I designed dis.</p>
+    <p>I made dis.</p>
   </footer>
 </body>
 </html>
