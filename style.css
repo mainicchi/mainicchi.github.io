@@ -278,6 +278,10 @@ p {
 
   }
 
+.myWorktext {
+  font-weight: 400;
+}
+
 
 .pSkillet {
     line-height: 40px;
@@ -328,9 +332,6 @@ p {
   margin-right: 30px;
 }
 
-.toolsPic {
-    padding-top: 10%;
-}
 
 #myBtn {
   display: none;
@@ -351,6 +352,33 @@ p {
 #myBtn:hover {
   background-color: #291900;
   color: #DFD8BE;
+}
+
+.tooltip {
+  padding: 3%;
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  visibility: hidden;
+  width: 120px;
+  background-color: #DFD8BE;
+  color: #291900;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 footer {
@@ -417,6 +445,10 @@ h5 {
 
 .helloText {
   font-size: 18px;
+}
+
+.myWorktext {
+  display:none !important;
 }
 
 .content {
