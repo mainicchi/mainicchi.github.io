@@ -301,6 +301,7 @@ p {
 
 .myWorktext {
   font-weight: 400;
+  text-align: center;
 }
 
 
@@ -308,6 +309,11 @@ p {
     line-height: 40px;
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
+
+    > i {
+      text-align: center;
+  }
 }
 
 .icon {
@@ -510,7 +516,7 @@ h5 {
           height: auto;
           padding-top: 10%;
           padding-bottom: 10%;
-          margin-left: -5%;
+
         }
 
         .education {
