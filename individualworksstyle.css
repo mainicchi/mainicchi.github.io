@@ -6,6 +6,9 @@
   
 body {
     background-color: #F3EDD8;
+    background-image: url(./photos/backround3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 .myWorks {
@@ -273,6 +276,9 @@ footer {
     color: #291900;
     text-align: center;
     padding: 20px 0;
+    background-image: url(./photos/backround1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     .contact {
         font-family: myFont;

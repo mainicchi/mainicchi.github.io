@@ -11,6 +11,9 @@
 body {
     background-color: #F3EDD8;
     margin: 0;
+    background-image: url(./photos/backround3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 h1 {
@@ -323,6 +326,10 @@ p {
 .skillsetBox {
   background-color: #DFD8BE;
   padding: 0 15% 0 15%;
+  background-image: url(./photos/backround2.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .toolsetBox {
@@ -413,6 +420,9 @@ footer {
   color: #291900;
   text-align: center;
   padding: 20px 0;
+  background-image: url(./photos/backround1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
     .contact {
       font-family: myFont;

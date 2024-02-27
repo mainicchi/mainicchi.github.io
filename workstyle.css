@@ -11,6 +11,9 @@
   
 body {
     background-color: #F3EDD8;
+    background-image: url(./photos/backround3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 h1 {
