@@ -177,8 +177,7 @@ p {
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 0 5% 0;
-    margin: 0 15% 0 15%;
+    margin: 5% 15% 5% 15%;
 
 
     .container {
@@ -549,6 +548,22 @@ h5 {
 
   }
 
+  .contentTwo {
+    padding: 0 0 0 0;
+  
+  }
+
+  .container-workflowName {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .container-workflowDesc {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+
   .toolsetBox {
     padding: 15% 15% 0 15%;
   }
@@ -559,13 +574,15 @@ h5 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
   }
 
   .skillset {
     display: flex;
     flex-direction: column;
     margin: 5% 0 5% 0;
-    margin: 0 15% 0 15%;
+    text-align: center;
+  
   }
 
   footer {
