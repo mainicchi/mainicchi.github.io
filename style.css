@@ -513,8 +513,8 @@ h5 {
 }
 
 .hello {
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 80px;
+  line-height: 80px;
 }
 
 .helloText {
@@ -597,6 +597,10 @@ h5 {
     padding: 15% 15% 0 15%;
   }
 
+  .toolsetInsidebox {
+    text-align: center;
+  }
+
 
   .box {
     display: flex;
@@ -612,6 +616,10 @@ h5 {
     margin: 5% 0 5% 0;
     text-align: center;
   
+  }
+
+  .buttonPlace {
+    padding-top: 10%;
   }
 
   footer {
