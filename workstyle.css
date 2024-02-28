@@ -14,6 +14,7 @@ body {
     background-image: url(./photos/backround3.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
   }
 
 h1 {
@@ -123,6 +124,7 @@ p {
 .headText {
     
     animation: 3s anim-lineUp ease-out 1;
+    width: 100%;
 }
 
 #myBtn {

@@ -9,6 +9,7 @@ body {
     background-image: url(./photos/backround3.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
   }
 
 .myWorks {
