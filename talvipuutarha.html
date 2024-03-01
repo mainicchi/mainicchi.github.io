@@ -54,6 +54,10 @@ function closeLightbox(image) {
 }
 </script>
 
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="./photos/talvipuutarha1.png" alt="Larger Image" id="lightboxImage">
+  </div>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Talvipuutarha</h2>
@@ -114,7 +118,7 @@ function closeLightbox(image) {
     </div>
 
     <div class="container-center">
-        <img class="imgBorder" src="./photos/talvipuutarha2.png" alt="talvipuutarha process">
+        <img class="imgBorder" src="./photos/talvipuutarha2.png" alt="talvipuutarha process" onclick="openLightbox('./photos/talvipuutarha2.png')" id="thumbnail">
         <p class="photoText">The process included benchmarking, brand sprinting and moodboard making.</p>
     </div>
 
@@ -126,7 +130,7 @@ function closeLightbox(image) {
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/talvipuutarha1.png" alt="new talvipuutarha">
+        <img class="imgBorder" src="./photos/talvipuutarha1.png" alt="new talvipuutarha" onclick="openLightbox('./photos/talvipuutarha1.png')" id="thumbnail">
     </div>
 
 </div>

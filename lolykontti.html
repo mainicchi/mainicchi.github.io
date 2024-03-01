@@ -54,6 +54,10 @@ function closeLightbox(image) {
 }
 </script>
 
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="./photos/loylykontti1.png" alt="Larger Image" id="lightboxImage">
+  </div>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Löylykontti</h2>
@@ -114,7 +118,7 @@ function closeLightbox(image) {
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/loylykontti1.png" alt="design process">
+        <img class="imgBorder" src="./photos/loylykontti1.png" alt="design process"  onclick="openLightbox('./photos/loylykontti1.png')" id="thumbnail">
         <p class="photoText">The design process included benchmarking, Crazy 8, brand sprinting and persona making.</p>
     </div>
 
@@ -124,7 +128,7 @@ function closeLightbox(image) {
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/loylykontti2.png" alt="new löylykontti">
+        <img class="imgBorder" src="./photos/loylykontti2.png" alt="new löylykontti"  onclick="openLightbox('./photos/loylykontti2.png')" id="thumbnail">
     </div>
 </div>
 
