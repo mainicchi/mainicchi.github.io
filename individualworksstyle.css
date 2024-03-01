@@ -3,6 +3,11 @@
     src: url(./font/NCLHighPrime-Demo.otf) format("opentype");
     font-weight: 800;
   }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
   
 body {
     background-color: #F3EDD8;

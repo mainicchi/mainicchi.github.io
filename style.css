@@ -4,6 +4,10 @@
   font-weight: 800;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .myName {
   font-family: myFont;
 }

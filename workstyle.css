@@ -4,6 +4,11 @@
     font-weight: 800;
   }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 .myWorks {
     font-family: myFont;
     font-size: 120px;
