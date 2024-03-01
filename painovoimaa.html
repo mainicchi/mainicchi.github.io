@@ -42,7 +42,22 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    function openLightbox(imageSrc) {
+  var lightboxImage = document.getElementById("lightboxImage");
+  lightboxImage.src = imageSrc;
+  document.getElementById("lightbox").style.display = "block";
+}
+
+// Function to close the lightbox
+function closeLightbox(image) {
+  document.getElementById("lightbox").style.display = "none";
+}
 </script>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="" alt="Larger Image" id="lightboxImage">
+  </div>
 
 <div class="topContainer">
 <div class="container-left interduction">
@@ -95,9 +110,10 @@
     </div>
 
     <div class="container-right">
-        <img class="imgBorder" src="./photos/painovoimaa1.png" alt="vanha painovoimaa">
+        <img class="imgBorder" src="./photos/painovoimaa1.png" alt="vanha painovoimaa" onclick="openLightbox('./photos/painovoimaa1.png')" id="thumbnail">
         <p class="photoText">The old website had outdated infomation and didn't fit the clients vision for the brand.</p>
     </div>
+
 
     <div class="process">
         <h2>Process</h2>
