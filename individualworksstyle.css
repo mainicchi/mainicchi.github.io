@@ -122,7 +122,6 @@ p {
         width: 50%;
         margin-top: 10%;
         margin-left: 30px;
-        margin-right: -5px;
         margin-bottom: 0;
     
         > img {
@@ -132,24 +131,22 @@ p {
     }
   }
 
-  /* Style for the lightbox container */
 #lightbox {
-  display: none; /* Hide the lightbox by default */
-  position: fixed; /* Fixed position */
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0,0,0,0.8); /* Semi-transparent black background */
-  z-index: 9999; /* Ensure it appears above other elements */
-  text-align: center; /* Center the image horizontally and vertically */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 9999;
+  text-align: center;
 }
 
-/* Style for the larger image */
 #lightboxImage {
-  margin-top: 5%; /* Adjust the top margin as needed */
-  max-width: 80%; /* Limit the maximum width of the image */
-  max-height: 80%; /* Limit the maximum height of the image */
+  margin-top: 5%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .content {
@@ -323,6 +320,17 @@ footer {
     > a {
     color: #291900;
 
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+  .mainPic {
+    margin-top: 0;
+  
+    > img {
+        width: 1000px;
+        height: auto;
+      }
     }
 }
 
