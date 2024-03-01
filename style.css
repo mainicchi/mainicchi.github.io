@@ -177,7 +177,7 @@ p {
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 15% 5% 15%;
+    margin: 0 15% 5% 15%;
 
 
     .container {
