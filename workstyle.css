@@ -222,11 +222,12 @@ footer {
       color: #291900;
   
       }
-  }
 
-    .footerText {
+      .footerText {
         height: 0;
     }
+
+  }
 
 @media only screen and (max-width: 950px) {
 
