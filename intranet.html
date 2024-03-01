@@ -54,6 +54,10 @@ function closeLightbox(image) {
 }
 </script>
 
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="./photos/intranet1.png" alt="Larger Image" id="lightboxImage">
+  </div>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Metropolia intranet</h2>
@@ -137,7 +141,7 @@ function closeLightbox(image) {
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/intranet1.png" alt="intranet">
+        <img class="imgBorder" src="./photos/intranet1.png" alt="intranet" onclick="openLightbox('./photos/intranet1.png')" id="thumbnail">
     </div>
 
 </div>

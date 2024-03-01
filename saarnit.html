@@ -54,6 +54,10 @@ function closeLightbox(image) {
 }
 </script>
 
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="./photos/saarnit1.png" alt="Larger Image" id="lightboxImage">
+  </div>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Saarni Likeit</h2>
@@ -106,7 +110,7 @@ function closeLightbox(image) {
     </div>
 
     <div class="container-right">
-        <img class="imgBorder" src="./photos/saarnit1.png" alt="vanha saarnit">
+        <img class="imgBorder" src="./photos/saarnit1.png" alt="vanha saarnit" onclick="openLightbox('./photos/saarnit1.png')" id="thumbnail">
         <p class="photoText">The old system and how it looks to the user.</p>
     </div>
 
@@ -121,11 +125,11 @@ function closeLightbox(image) {
     </div>
 
     <div class="container-left">
-        <img class="imgBorder" src="./photos/saarnit2.png" alt="design process for saarnit">
+        <img class="imgBorder" src="./photos/saarnit2.png" alt="design process for saarnit" onclick="openLightbox('./photos/saarnit2.png')" id="thumbnail">
         <p class="photoText">The design process included benchmarking, user mapping, a workshop and card sorting for user testing</p>
     </div>
     <div class="container-right">
-        <img class="imgBorder" src="./photos/saarnit3.png" alt="wireframes for saarnit">
+        <img class="imgBorder" src="./photos/saarnit3.png" alt="wireframes for saarnit" onclick="openLightbox('./photos/saarnit3.png')" id="thumbnail">
         <p class="photoText">As a UX designer, I created wireframes and prototypes for the mobile and desktop</p>
     </div>
 
@@ -137,7 +141,7 @@ function closeLightbox(image) {
     </div>
     
     <div class="container-center">
-        <img class="imgBorder" src="./photos/saarnit4.png" alt="new saarnit">
+        <img class="imgBorder" src="./photos/saarnit4.png" alt="new saarnit" onclick="openLightbox('./photos/saarnit4.png')" id="thumbnail">
     </div>
 </div>
 

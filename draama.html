@@ -54,6 +54,10 @@ function closeLightbox(image) {
 }
 </script>
 
+<div id="lightbox" onclick="closeLightbox()">
+    <img src="./photos/draama1.png" alt="Larger Image" id="lightboxImage">
+  </div>
+
 <div class="topContainer">
 <div class="container-left interduction">
     <h2>Drama gallery</h2>
@@ -123,11 +127,11 @@ function closeLightbox(image) {
     </div>
 
     <div class="container-left">
-        <img class="imgBorder" src="./photos/draama2.png" alt="design process for draama gallery ry">
+        <img class="imgBorder" src="./photos/draama2.png" alt="design process for draama gallery ry" onclick="openLightbox('./photos/draama2.png')" id="thumbnail">
         <p class="photoText">The design process included sitemaping that was tested by the users.</p>
     </div>
     <div class="container-right">
-        <img class="imgBorder" src="./photos/draama3.png" alt="wireframes for draama gallery">
+        <img class="imgBorder" src="./photos/draama3.png" alt="wireframes for draama gallery" onclick="openLightbox('./photos/draama3.png')" id="thumbnail">
         <p class="photoText">We created prototypes in this project from the gathered data.</p>
     </div>
 
