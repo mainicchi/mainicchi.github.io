@@ -496,6 +496,9 @@ footer {
   .mobile {
     display: none !important;
   }
+  .topnav {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -503,7 +506,57 @@ footer {
   .desktop {
     display: none !important;
   }
-  h1 {
+
+  .navbar {
+    display: none !important;
+  }
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    height: 500px;
+    color: #DFD8B3;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #DFD8B3;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #291900;
+    padding: 14px 5%;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    background-color: #F3EDD8;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    color: #291900;
+  }
+  
+  .active {
+    color: #291900;
+  }
+
+h1 {
     font-size: 60px;
 
 }
