@@ -547,6 +547,13 @@ footer {
     right: 0;
     top: 0;
   }
+
+  .topnav a.icon:after {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   
   .topnav a:hover {
     color: #291900;
