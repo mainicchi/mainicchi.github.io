@@ -124,7 +124,7 @@ p {
     bottom: -5px;
     width: 100%;
     height: 2px;
-    background-color: #291900;
+    background-color: #A5BE6A;
     transition: bottom 0.3s ease;
   }
   
@@ -305,7 +305,7 @@ p {
     margin-top: auto;
     text-decoration: none;
     position: relative;
-    transition: all .2s ease; 
+    transition: all .2s ease;
 
   > p i {
       margin-left: 40px;
@@ -318,6 +318,7 @@ p {
 
 .myWorktext {
   font-weight: 400;
+  font-size: 20px; 
 }
 
 
@@ -416,7 +417,7 @@ p {
   font-size: 14px;
   visibility: hidden;
   width: 120px;
-  background-color: #DFD8BE;
+  background-color: #A5BE6A;
   color: #291900;
   text-align: center;
   border-radius: 6px;
@@ -457,14 +458,72 @@ p {
   justify-content: center;
 }
 
+.cta {
+  position: relative;
+  padding: 19px 22px;
+  transition: all 0.2s ease;
+  width: 50%;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgb(165, 190, 106, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta p {
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+  font-weight: 400;
+  letter-spacing: .25em
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #291900;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  &:before {
+    width: 100%;
+    background: rgb(165, 190, 106);
+  }
+  & svg {
+    transform: translateX(0);
+  }
+}
+
+.cta:active {
+  transform: scale(0.96);
+}
+
+.buttonBottom {
+  display: flex;
+  margin: auto;
+  width: 30%;
+}
+
 footer {
-  background-color:#F3EDD8;
   color: #291900;
   text-align: center;
   padding: 20px 0;
-  background-image: url(./photos/backround1.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 
     .contact {
       font-family: myFont;
@@ -499,6 +558,7 @@ footer {
   .topnav {
     display: none !important;
   }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -600,6 +660,7 @@ h5 {
 .myWorktext {
   font-weight: 400;
   text-align: center;
+
 }
 
 .pointer {
