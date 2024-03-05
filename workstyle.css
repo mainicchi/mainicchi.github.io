@@ -7,7 +7,6 @@
 html {
     scroll-behavior: smooth;
   }
-  
 
 .myWorks {
     font-family: myFont;
@@ -217,8 +216,8 @@ p {
   }
   
   #myBtn:hover {
-    background-color: #291900;
-    color: #DFD8BE;
+    background-color: #A5BE6A;
+    color: #291900;
   }
 
 @keyframes anim-lineUp {
