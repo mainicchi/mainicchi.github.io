@@ -236,15 +236,6 @@ p {
       justify-content: center;
     
 }
-
-    .pointer i {
-      padding: 20px;
-      animation-name: bounce;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      position: relative;
-      animation: 3s bounce infinite;
-    }
   
     @keyframes bounce {
       0% { top: 0; }
