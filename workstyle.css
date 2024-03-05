@@ -263,6 +263,10 @@ p {
 
 }
 
+.footerText {
+    height: 90px;
+}
+
       
 footer {
     color: #291900;
