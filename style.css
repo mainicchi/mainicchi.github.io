@@ -165,6 +165,15 @@ p {
   font-weight: 300;
   font-style: normal;
   font-size: 14px;
+}
+
+.experienceForth {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  padding-bottom: 10px;
+  font-style: italic;
   padding-bottom: 10px;
 }
 
