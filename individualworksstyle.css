@@ -343,11 +343,16 @@ footer {
   .topnav {
     display: none !important;
   }
+
 }
 
 @media only screen and (max-width: 950px) {
 
   .navbar {
+    display: none !important;
+  }
+
+  #lightbox {
     display: none !important;
   }
 
