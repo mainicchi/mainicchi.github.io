@@ -552,6 +552,10 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
+  html {
+    overflow-x: hidden;
+  }
+
   .desktop {
     display: none !important;
   }
