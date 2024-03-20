@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <title>Maini Tran Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="./photos/icons/mainifavi.png">
 </head>
@@ -17,173 +20,191 @@
         <a href="./index.html">Maini Tran</a>
         <div class="navbarIcons">
             <a href="./index.html#AboutMe">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    </div>
-</div>
-
-<div class="mobileContainer">
-    <div class="topnav">
-        <a href="./index.html" class="active">Maini Tran</a>
-        <div id="myLinks">
-        <a href="./index.html#aboutMeMobile">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="./works.html">Works</a>
+            <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                    class="fa-brands fa-linkedin fa-lg"></i></a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars" id="burgerIcon"></i>
-        </a>
-      </div>
-</div>
+    </div>
 
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      var icon = document.getElementById("burgerIcon");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-        icon.className = "fa fa-bars";
-      } else {
-        x.style.display = "block";
-        icon.className = "fa-solid fa-xmark";
-      }
+    <div class="mobileContainer">
+        <div class="topnav">
+            <a href="./index.html" class="active">Maini Tran</a>
+            <div id="myLinks">
+                <a href="./index.html#aboutMeMobile">About Me</a>
+                <a href="./works.html">Works</a>
+                <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                    target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                        class="fa-brands fa-linkedin fa-lg"></i></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="burgerIcon"></i>
+            </a>
+        </div>
+    </div>
 
-    }
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            var icon = document.getElementById("burgerIcon");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                icon.className = "fa fa-bars";
+            } else {
+                x.style.display = "block";
+                icon.className = "fa-solid fa-xmark";
+            }
+
+        }
     </script>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-<script>
+    <script>
 
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+        let mybutton = document.getElementById("myBtn");
 
-    function openLightbox(imageSrc) {
-  var lightboxImage = document.getElementById("lightboxImage");
-  lightboxImage.src = imageSrc;
-  document.getElementById("lightbox").style.display = "block";
-}
+        window.onscroll = function () { scrollFunction() };
 
-function closeLightbox(image) {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-<div id="lightbox" onclick="closeLightbox()">
-    <img src="./photos/intranet1.png" alt="Larger Image" id="lightboxImage">
-  </div>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
-<div class="topContainer">
-<div class="container-left interduction">
-    <h2>Metropolia intranet</h2>
-    <h4>Researching and making a better intranet with service design methods and transcribing the end product to a cohesive pamphlet for the client.</h4>
-    <p>I took part in Metropolia's intranet reform project. Our team was responsible of the research for
-        operational fluidity of the  site. And I was also part of a two person team that transcribed the end product to a cohesive pamphlet for the client.
-        <br><br>
-        The project included fundamental skills of service design in practical use, for example user research and testing with various design methods. In user
-        research we had intranet users help us find the pros and cons by using the card sorting method and open interviews.
-    </p>
-</div>
+        function openLightbox(imageSrc) {
+            var lightboxImage = document.getElementById("lightboxImage");
+            lightboxImage.src = imageSrc;
+            document.getElementById("lightbox").style.display = "block";
+        }
 
-<div class="container-right mainPic">
-    <img src="./photos/intranetmain.png" alt="main intranet picture" width="900px" height="675px">
-</div>
-</div>
+        function closeLightbox(image) {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
 
-<div class="content">
-
-
-    <div class="info role">
-        <h3>My role</h3>
-        <p class="infoText">Service Designer<br>
-            Graphic Designer
-        </p>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img src="./photos/intranet1.png" alt="Larger Image" id="lightboxImage">
     </div>
 
-<div class="smallInfo">
-    <div class="info year">
-        <h3>Year</h3>
-        <p class="infoText">2021</p>
+    <div class="topContainer">
+        <div class="container-left interduction">
+            <h2>Metropolia intranet</h2>
+            <h4>Researching and making a better intranet with service design methods and transcribing the end product to
+                a cohesive pamphlet for the client.</h4>
+            <p>I took part in Metropolia's intranet reform project. Our team was responsible of the research for
+                operational fluidity of the site. And I was also part of a two person team that transcribed the end
+                product to a cohesive pamphlet for the client.
+                <br><br>
+                The project included fundamental skills of service design in practical use, for example user research
+                and testing with various design methods. In user
+                research we had intranet users help us find the pros and cons by using the card sorting method and open
+                interviews.
+            </p>
+        </div>
+
+        <div class="container-right mainPic">
+            <img src="./photos/intranetmain.png" alt="main intranet picture" width="900px" height="675px">
+        </div>
     </div>
 
-    <div class="info time">
-        <h3>Timeline</h3>
-        <p class="infoText">6 weeks</p>
+    <div class="content">
+
+
+        <div class="info role">
+            <h3>My role</h3>
+            <p class="infoText">Service Designer<br>
+                Graphic Designer
+            </p>
+        </div>
+
+        <div class="smallInfo">
+            <div class="info year">
+                <h3>Year</h3>
+                <p class="infoText">2021</p>
+            </div>
+
+            <div class="info time">
+                <h3>Timeline</h3>
+                <p class="infoText">6 weeks</p>
+            </div>
+
+            <div class="info tools">
+                <h3>Tools</h3>
+                <p class="infoText">Adobe illustrator, Adobe Photoshop, Powerpoint</p>
+            </div>
+        </div>
+
+        <div class="container-center longStory">
+            <h2>The long story</h2>
+            <p>
+                The client asked us to find out what kind of content and functionalities make studying smoother. The
+                client wanted to also know what kind of interaction needs the intranet could fulfill and what is needed
+                to make it attractive to users who go to the intranet.
+                <br><br>
+                In the assignment, user profiles, for example, were raised as an interesting research subjects. Who are
+                the users? How and what is the OMA intranet used for? How does it feel to use? The goal was to create a
+                concrete vision of the OMA intranet and find an
+                answer to the question: what is a dialogic intranet like, that supports the performance of its basic
+                tasks and enables interaction?
+            </p>
+        </div>
+
+        <div class="process">
+            <h2>Process</h2>
+            <p>We started the project by analysing the most important questions of
+                the assignment, as well as the prioritized wishes of the users and the
+                current challenges of the intranet. Based on the research, the project was
+                separated into two different main themes; the intranet's dialogic
+                interaction and the intranet's basic task functionalities to help everyday
+                work.
+                <br><br>
+                The functional team focused on the information architecture of the intranet, its
+                functionality, and its content. The dialogic team covered the interaction with users and the
+                community and intranet visual elements. Our team worked on this theme. Also me and and other
+                teammate consolidated information from all the teams and translated the end product into a cohesive
+                pamphlet for the client.
+                <br><br>
+                Our team facilitated various workshops and open interviews with the
+                university's students, teachers, and other workforces, who used OMA
+                intranet regularly.
+            </p>
+        </div>
+
+        <div>
+            <h2>Results</h2>
+            <p> From the workshops and interviews, we found a lot of
+                different opinions and clear improvement possibilities. The challenge was to find the
+                golden middle ground of the different users needs and cases. There were a lot of
+                differences between the student's and other workforce's intranet needs.</p>
+        </div>
+
+        <div class="container-center">
+            <img class="imgBorder" src="./photos/intranet1.png" alt="intranet"
+                onclick="openLightbox('./photos/intranet1.png')" id="thumbnail">
+        </div>
+
     </div>
 
-    <div class="info tools">
-        <h3>Tools</h3>
-        <p class="infoText">Adobe illustrator, Adobe Photoshop, Powerpoint</p>
-    </div>
-</div>
-
-    <div class="container-center longStory">
-        <h2>The long story</h2>
-        <p>
-            The client asked us to find out what kind of content and functionalities make studying smoother. The client wanted to also know what kind of interaction needs the intranet could fulfill and what is needed to make it attractive to users who go to the intranet. 
-            <br><br>
-            In the assignment, user profiles, for example, were raised as an interesting research subjects. Who are the users? How and what is the OMA intranet used for? How does it feel to use? The goal was to create a concrete vision of the OMA intranet and find an
-            answer to the question: what is a dialogic intranet like, that supports the performance of its basic tasks and enables interaction?
-        </p>
-    </div>
-
-    <div class="process">
-        <h2>Process</h2>
-        <p>We started the project by analysing the most important questions of
-            the assignment, as well as the prioritized wishes of the users and the
-           current challenges of the intranet. Based on the research, the project was
-           separated into two different main themes; the intranet's dialogic
-           interaction and the intranet's basic task functionalities to help everyday
-           work. 
-           <br><br>
-           The functional team focused on the information architecture of the intranet, its
-           functionality, and its content. The dialogic team covered the interaction with users and the
-           community and intranet visual elements. Our team worked on this theme. Also me and and other 
-           teammate consolidated information from all the teams and translated the end product into a cohesive pamphlet for the client.
-           <br><br>
-           Our team facilitated various workshops and open interviews with the
-           university's students, teachers, and other workforces, who used OMA
-           intranet regularly.
-        </p>
-    </div>
-
-    <div>
-    <h2>Results</h2>
-    <p> From the workshops and interviews, we found a lot of
-        different opinions and clear improvement possibilities. The challenge was to find the
-        golden middle ground of the different users needs and cases. There were a lot of
-        differences between the student's and other workforce's intranet needs.</p>
-    </div>
-    
-    <div class="container-center">
-        <img class="imgBorder" src="./photos/intranet1.png" alt="intranet" onclick="openLightbox('./photos/intranet1.png')" id="thumbnail">
-    </div>
-
-</div>
-
-<footer>
-    <h2 class="contact">Contact Me</h2>
-    <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
-    <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x" style="padding: 5px;"></i></a>
-    <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I made dis.</p>
-  </footer>
+    <footer>
+        <h2 class="contact">Contact Me</h2>
+        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
+        <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+            target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x"
+                style="padding: 5px;"></i></a>
+        <h3 class="nameLogo">Maini<br> Tran</h3>
+        <p>I made dis.</p>
+    </footer>
 
 </body>
+
 </html>

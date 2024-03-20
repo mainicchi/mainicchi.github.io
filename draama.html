@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <title>Maini Tran Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="./photos/icons/mainifavi.png">
 </head>
@@ -17,178 +20,214 @@
         <a href="./index.html">Maini Tran</a>
         <div class="navbarIcons">
             <a href="./index.html#AboutMe">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    </div>
-</div>
-
-<div class="mobileContainer">
-    <div class="topnav">
-        <a href="./index.html" class="active">Maini Tran</a>
-        <div id="myLinks">
-        <a href="./index.html#aboutMeMobile">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="./works.html">Works</a>
+            <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                    class="fa-brands fa-linkedin fa-lg"></i></a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" id="burgerIcon"></i>
-        </a>
-      </div>
-</div>
+    </div>
 
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      var icon = document.getElementById("burgerIcon");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-        icon.className = "fa fa-bars";
-      } else {
-        x.style.display = "block";
-        icon.className = "fa-solid fa-xmark";
-      }
+    <div class="mobileContainer">
+        <div class="topnav">
+            <a href="./index.html" class="active">Maini Tran</a>
+            <div id="myLinks">
+                <a href="./index.html#aboutMeMobile">About Me</a>
+                <a href="./works.html">Works</a>
+                <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                    target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                        class="fa-brands fa-linkedin fa-lg"></i></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="burgerIcon"></i>
+            </a>
+        </div>
+    </div>
 
-    }
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            var icon = document.getElementById("burgerIcon");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                icon.className = "fa fa-bars";
+            } else {
+                x.style.display = "block";
+                icon.className = "fa-solid fa-xmark";
+            }
+
+        }
     </script>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-<script>
+    <script>
 
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    
-    function openLightbox(imageSrc) {
-  var lightboxImage = document.getElementById("lightboxImage");
-  lightboxImage.src = imageSrc;
-  document.getElementById("lightbox").style.display = "block";
-}
+        let mybutton = document.getElementById("myBtn");
 
-function closeLightbox(image) {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
+        window.onscroll = function () { scrollFunction() };
 
-<div id="lightbox" onclick="closeLightbox()">
-    <img src="./photos/draama1.png" alt="Larger Image" id="lightboxImage">
-  </div>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-<div class="topContainer">
-<div class="container-left interduction">
-    <h2>Drama Gallery</h2>
-    <h4>Reform the page structure and content of the website. Additionally unified the look and content of the clients social media channels</h4>
-    <p>Revamping Drama Gallery, a Finnish party wear collection online shop, involved a transformation aimed at enhancing the website's page structure and content. 
-        <br><br>
-        Leveraging the client's existing WordPress framework, we sought to unify the brand's visual identity across various platforms, 
-        including Facebook and Instagram.
-        <br><br>
-        I also developed a tailored social media strategy for the client, accompanied by detailed instructions for effective Instagram 
-        usage. Furthermore, the project incorporated an on-site training session, where we provided hands-on guidance to assist the client on Instagram usage.
-</div>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
 
-<div class="container-right mainPic">
-    <img src="./photos/draamamain.png" alt="main painovoimaa picture" width="900px" height="675px">
-</div>
-</div>
+        function openLightbox(imageSrc) {
+            var lightboxImage = document.getElementById("lightboxImage");
+            lightboxImage.src = imageSrc;
+            document.getElementById("lightbox").style.display = "block";
+        }
 
-<div class="content">
+        function closeLightbox(image) {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
 
-
-    <div class="info role">
-        <h3>My role</h3>
-        <p class="infoText">Social media marketing<br>
-            Content creation<br>
-            Prototyping<br>
-            Website development
-        </p>
+    <div id="lightbox" onclick="closeLightbox()">
+        <img src="./photos/draama1.png" alt="Larger Image" id="lightboxImage">
     </div>
 
-<div class="smallInfo">
-    <div class="info year">
-        <h3>Year</h3>
-        <p class="infoText">2023</p>
-    </div>
+    <div class="topContainer">
+        <div class="container-left interduction">
+            <h2>Drama Gallery</h2>
+            <h4>Reform the page structure and content of the website. Additionally unified the look and content of the
+                clients social media channels</h4>
+            <p>Revamping Drama Gallery, a Finnish party wear collection online shop, involved a transformation aimed at
+                enhancing the website's page structure and content.
+                <br><br>
+                Leveraging the client's existing WordPress framework, we sought to unify the brand's visual identity
+                across various platforms,
+                including Facebook and Instagram.
+                <br><br>
+                I also developed a tailored social media strategy for the client, accompanied by detailed instructions
+                for effective Instagram
+                usage. Furthermore, the project incorporated an on-site training session, where we provided hands-on
+                guidance to assist the client on Instagram usage.
+        </div>
 
-    <div class="info time">
-        <h3>Timeline</h3>
-        <p class="infoText">8 weeks</p>
-    </div>
-
-    <div class="info tools">
-        <h3>Tools</h3>
-        <p class="infoText">Figma, Adobe Photoshop, Canva, WordPress</p>
-    </div>
-</div>
-
-    <div class="container-center longStory">
-        <h2>The long story</h2>
-        <p>
-            The website underwent a comprehensive update, involving the renewal of both, page structure and content, as well as the unification of the appearance and content across the company's social media accounts on Instagram and Facebook.
-            The design steps and ideation driving this transformation were orchestrated by our team, drawing inspiration from service design principles and research insights.
-            <br><br>
-            In addition to the website upgrade, our involvement extended to offering light consulting on digital marketing strategies. This included providing insightful guidance on optimizing the company's presence on Instagram and Facebook, ensuring alignment with the company's specific needs and leveraging available resources most effectively.
-        </p>
-    </div>
-
-    <div class="process">
-        <h2>Process</h2>
-        <p>Form the start of the project the client wished to use the company's existing WordPress site template. The client contributed to the project's visual side by providing photos and other relevant materials, fostering a collaborative approach.
-            <br><br>
-            Our journey commenced with a deep dive into understanding the customer target groups, followed by a thorough exploration of the WordPress theme in use, as this was new to our team. Benchmarking against different online shops and employing card sorting techniques for user paths informed the creation of a comprehensive sitemap. We translated this data into wireframes using Figma, incorporating light user testing for refinement.
-            <br><br>
-            The iterative design process continued with the construction of visual prototypes, rigorously tested and refined based on user feedback. The final design was seamlessly integrated into the WordPress platform, ensuring a cohesive user experience.
-            The culmination involved rigorous testing of the new design, implementing adjustments based on feedback, and compiling comprehensive instructions.
-        </p>
-    </div>
-
-    <div class="container-left">
-        <img class="imgBorder" src="./photos/draama2.png" alt="design process for draama gallery ry" onclick="openLightbox('./photos/draama2.png')" id="thumbnail">
-        <p class="photoText">The design process included sitemaping that was tested by the users.</p>
-    </div>
-    <div class="container-right">
-        <img class="imgBorder" src="./photos/draama3.png" alt="wireframes for draama gallery" onclick="openLightbox('./photos/draama3.png')" id="thumbnail">
-        <p class="photoText">We created prototypes in this project from the gathered data.</p>
-    </div>
-
-    <div>
-    <h2>Results</h2>
-    <p> Beyond the website overhaul, our project extended to optimizing the client's social media presence. I crafted a social media calendar for scheduled posts, devised a strategic plan to elevate marketing efforts, and even provided ready-to-use story posts. As a hands-on addition, I conducted an on-site training day, guiding the client through effective Instagram utilization. This project underscores my commitment to delivering holistic solutions, seamlessly blending website revamps with strategic social media enhancements.</p>
-    </div>
-    
-    <div class="container-center">
-        <img class="imgBorder" src="./photos/draama1.png" alt="new draama"  onclick="openLightbox('./photos/draama1.png')" id="thumbnail">
-    </div>
-
-    <div class="container-center">
-    <div class="buttonPlace">
-        <a href="https://www.dramagallery.fi/" target="https://www.dramagallery.fi/" class="button">Check out the final website</a>
+        <div class="container-right mainPic">
+            <img src="./photos/draamamain.png" alt="main painovoimaa picture" width="900px" height="675px">
         </div>
     </div>
-</div>
 
-<footer>
-    <h2 class="contact">Contact Me</h2>
-    <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
-    <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x" style="padding: 5px;"></i></a>
-    <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I made dis.</p>
-  </footer>
+    <div class="content">
+
+
+        <div class="info role">
+            <h3>My role</h3>
+            <p class="infoText">Social media marketing<br>
+                Content creation<br>
+                Prototyping<br>
+                Website development
+            </p>
+        </div>
+
+        <div class="smallInfo">
+            <div class="info year">
+                <h3>Year</h3>
+                <p class="infoText">2023</p>
+            </div>
+
+            <div class="info time">
+                <h3>Timeline</h3>
+                <p class="infoText">8 weeks</p>
+            </div>
+
+            <div class="info tools">
+                <h3>Tools</h3>
+                <p class="infoText">Figma, Adobe Photoshop, Canva, WordPress</p>
+            </div>
+        </div>
+
+        <div class="container-center longStory">
+            <h2>The long story</h2>
+            <p>
+                The website underwent a comprehensive update, involving the renewal of both, page structure and content,
+                as well as the unification of the appearance and content across the company's social media accounts on
+                Instagram and Facebook.
+                The design steps and ideation driving this transformation were orchestrated by our team, drawing
+                inspiration from service design principles and research insights.
+                <br><br>
+                In addition to the website upgrade, our involvement extended to offering light consulting on digital
+                marketing strategies. This included providing insightful guidance on optimizing the company's presence
+                on Instagram and Facebook, ensuring alignment with the company's specific needs and leveraging available
+                resources most effectively.
+            </p>
+        </div>
+
+        <div class="process">
+            <h2>Process</h2>
+            <p>Form the start of the project the client wished to use the company's existing WordPress site template.
+                The client contributed to the project's visual side by providing photos and other relevant materials,
+                fostering a collaborative approach.
+                <br><br>
+                Our journey commenced with a deep dive into understanding the customer target groups, followed by a
+                thorough exploration of the WordPress theme in use, as this was new to our team. Benchmarking against
+                different online shops and employing card sorting techniques for user paths informed the creation of a
+                comprehensive sitemap. We translated this data into wireframes using Figma, incorporating light user
+                testing for refinement.
+                <br><br>
+                The iterative design process continued with the construction of visual prototypes, rigorously tested and
+                refined based on user feedback. The final design was seamlessly integrated into the WordPress platform,
+                ensuring a cohesive user experience.
+                The culmination involved rigorous testing of the new design, implementing adjustments based on feedback,
+                and compiling comprehensive instructions.
+            </p>
+        </div>
+
+        <div class="container-left">
+            <img class="imgBorder" src="./photos/draama2.png" alt="design process for draama gallery ry"
+                onclick="openLightbox('./photos/draama2.png')" id="thumbnail">
+            <p class="photoText">The design process included sitemaping that was tested by the users.</p>
+        </div>
+        <div class="container-right">
+            <img class="imgBorder" src="./photos/draama3.png" alt="wireframes for draama gallery"
+                onclick="openLightbox('./photos/draama3.png')" id="thumbnail">
+            <p class="photoText">We created prototypes in this project from the gathered data.</p>
+        </div>
+
+        <div>
+            <h2>Results</h2>
+            <p> Beyond the website overhaul, our project extended to optimizing the client's social media presence. I
+                crafted a social media calendar for scheduled posts, devised a strategic plan to elevate marketing
+                efforts, and even provided ready-to-use story posts. As a hands-on addition, I conducted an on-site
+                training day, guiding the client through effective Instagram utilization. This project underscores my
+                commitment to delivering holistic solutions, seamlessly blending website revamps with strategic social
+                media enhancements.</p>
+        </div>
+
+        <div class="container-center">
+            <img class="imgBorder" src="./photos/draama1.png" alt="new draama"
+                onclick="openLightbox('./photos/draama1.png')" id="thumbnail">
+        </div>
+
+        <div class="container-center">
+            <div class="buttonPlace">
+                <a href="https://www.dramagallery.fi/" target="https://www.dramagallery.fi/" class="button">Check out
+                    the final website</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="contact">Contact Me</h2>
+        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
+        <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+            target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x"
+                style="padding: 5px;"></i></a>
+        <h3 class="nameLogo">Maini<br> Tran</h3>
+        <p>I made dis.</p>
+    </footer>
 
 </body>
+
 </html>

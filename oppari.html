@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="individualworksstyle.css">
-    <title>Maini Tran Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="./photos/icons/mainifavi.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="individualworksstyle.css">
+  <title>Maini Tran Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="./photos/icons/mainifavi.png">
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="./index.html">Maini Tran</a>
-        <div class="navbarIcons">
-            <a href="./index.html#AboutMe">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+  <div class="navbar">
+    <a href="./index.html">Maini Tran</a>
+    <div class="navbarIcons">
+      <a href="./index.html#AboutMe">About Me</a>
+      <a href="./works.html">Works</a>
+      <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+        target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
     </div>
-</div>
+  </div>
 
-<div class="mobileContainer">
+  <div class="mobileContainer">
     <div class="topnav">
-        <a href="./index.html" class="active">Maini Tran</a>
-        <div id="myLinks">
+      <a href="./index.html" class="active">Maini Tran</a>
+      <div id="myLinks">
         <a href="./index.html#aboutMeMobile">About Me</a>
         <a href="./works.html">Works</a>
         <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" id="burgerIcon"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+          target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
       </div>
-</div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" id="burgerIcon"></i>
+      </a>
+    </div>
+  </div>
 
-<script>
+  <script>
     function myFunction() {
       var x = document.getElementById("myLinks");
       var icon = document.getElementById("burgerIcon");
@@ -51,16 +56,16 @@
       }
 
     }
-    </script>
+  </script>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-<script>
+  <script>
 
     let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
+
+    window.onscroll = function () { scrollFunction() };
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -68,68 +73,84 @@
         mybutton.style.display = "none";
       }
     }
-    
+
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
 
     function openLightbox(imageSrc) {
-  var lightboxImage = document.getElementById("lightboxImage");
-  lightboxImage.src = imageSrc;
-  document.getElementById("lightbox").style.display = "block";
-}
+      var lightboxImage = document.getElementById("lightboxImage");
+      lightboxImage.src = imageSrc;
+      document.getElementById("lightbox").style.display = "block";
+    }
 
-function closeLightbox(image) {
-  document.getElementById("lightbox").style.display = "none";
-}
-</script>
+    function closeLightbox(image) {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
 
-<div class="topContainer">
-<div class="container-left interduction">
-    <h2>Digital Design Bachelor Thesis</h2>
-    <h4>The possibilities of using Artificial Intelligence in User Interface Design: How ChatGPT and DALL-E can be used in UI Design</h4>
-    <p>Artificial intelligence is changing how designers produce content. The purpose of this thesis was to investigate how AI programs
-         such as ChatGPT and DALL-E can be utilized in UI design. The theoretical section of the thesis covers the background of AI, key concepts, and OpenAI programs. Additionally, the thesis discusses the background, principles, and methods of UI development, and explores the utilization of artificial intelligence in UI design, as well as their background relating to each other.
-    </p>
-</div>
-
-<div class="container-right mainPic">
-    <img src="./photos/opparimain.png" alt="main painovoimaa picture" width="900px" height="675px">
-</div>
-
-</div>
-
-<div class="content">
-
-<div class="container-center longStory">
-    <div class="process">
-        <h2>Process</h2>
-        <p>The study was conducted as a design task and through semi-structured interviews, involving three individuals with expertise
-             in UI design and knowledge of AI functionality. The results of the case study were compared to the UI design principles presented in the thesis. 
-        </p>
+  <div class="topContainer">
+    <div class="container-left interduction">
+      <h2>Digital Design Bachelor Thesis</h2>
+      <h4>The possibilities of using Artificial Intelligence in User Interface Design: How ChatGPT and DALL-E can be
+        used in UI Design</h4>
+      <p>Artificial intelligence is changing how designers produce content. The purpose of this thesis was to
+        investigate how AI programs
+        such as ChatGPT and DALL-E can be utilized in UI design. The theoretical section of the thesis covers the
+        background of AI, key concepts, and OpenAI programs. Additionally, the thesis discusses the background,
+        principles, and methods of UI development, and explores the utilization of artificial intelligence in UI design,
+        as well as their background relating to each other.
+      </p>
     </div>
-</div>
+
+    <div class="container-right mainPic">
+      <img src="./photos/opparimain.png" alt="main painovoimaa picture" width="900px" height="675px">
+    </div>
+
+  </div>
+
+  <div class="content">
+
+    <div class="container-center longStory">
+      <div class="process">
+        <h2>Process</h2>
+        <p>The study was conducted as a design task and through semi-structured interviews, involving three individuals
+          with expertise
+          in UI design and knowledge of AI functionality. The results of the case study were compared to the UI design
+          principles presented in the thesis.
+        </p>
+      </div>
+    </div>
 
     <div>
-    <h2>Results</h2>
-    <p>The study revealed that ChatGPT can be useful in user interface design. The program helped to condense and provide new ideas for UI design, and facilitated a better understanding of user needs and how to design UIs that meet those needs. On the other hand, DALL-E was more directional than precise as a tool for designing the visual appearance of the UI. It provided helpful guidelines for the designer but may not be a precise tool for implementation of the design.</p>
+      <h2>Results</h2>
+      <p>The study revealed that ChatGPT can be useful in user interface design. The program helped to condense and
+        provide new ideas for UI design, and facilitated a better understanding of user needs and how to design UIs that
+        meet those needs. On the other hand, DALL-E was more directional than precise as a tool for designing the visual
+        appearance of the UI. It provided helpful guidelines for the designer but may not be a precise tool for
+        implementation of the design.</p>
     </div>
-    <div class= "container-center">
-    <div class="buttonPlace">
-        <a href="https://www.theseus.fi/bitstream/handle/10024/800383/Tran_Maini.pdf?sequence=2&isAllowed=y" target="https://www.theseus.fi/bitstream/handle/10024/800383/Tran_Maini.pdf?sequence=2&isAllowed=y" class="button">Read the full thesis here</a>
-        </div>
-        <p class="oppariButtonText">(Available only in Finnish)</p>
+    <div class="container-center">
+      <div class="buttonPlace">
+        <a href="https://www.theseus.fi/bitstream/handle/10024/800383/Tran_Maini.pdf?sequence=2&isAllowed=y"
+          target="https://www.theseus.fi/bitstream/handle/10024/800383/Tran_Maini.pdf?sequence=2&isAllowed=y"
+          class="button">Read the full thesis here</a>
+      </div>
+      <p class="oppariButtonText">(Available only in Finnish)</p>
     </div>
-    </div>
+  </div>
 
-</div>
-<footer>
+  </div>
+  <footer>
     <h2 class="contact">Contact Me</h2>
     <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
-    <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x" style="padding: 5px;"></i></a>
+    <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+      target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x"
+        style="padding: 5px;"></i></a>
     <h3 class="nameLogo">Maini<br> Tran</h3>
     <p>I made dis.</p>
   </footer>
 </body>
+
 </html>

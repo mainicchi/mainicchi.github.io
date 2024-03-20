@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,152 +8,165 @@
     <title>Maini Tran Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="./photos/icons/mainifavi.png">
 </head>
 
 <body>
     <div style="width: 100%; height: 1px;"></div>
-<div class="navbar" id="navbar">
-    <a href="./index.html">Maini Tran</a>
-    <div class="navbarIcons">
-    <a href="#AboutMe">About Me</a>
-    <a href="./works.html">Works</a>
-    <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-    <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    </div>
-</div>
-
-<div class="mobileContainer">
-    <div class="topnav">
-        <a href="./index.html" class="active">Maini Tran</a>
-        <div id="myLinks">
-        <a href="./index.html#aboutMeMobile">About Me</a>
-        <a href="./works.html">Works</a>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+    <div class="navbar" id="navbar">
+        <a href="./index.html">Maini Tran</a>
+        <div class="navbarIcons">
+            <a href="#AboutMe">About Me</a>
+            <a href="./works.html">Works</a>
+            <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                    class="fa-brands fa-linkedin fa-lg"></i></a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars" id="burgerIcon"></i>
-        </a>
-      </div>
-</div>
+    </div>
 
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      var icon = document.getElementById("burgerIcon");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-        icon.className = "fa fa-bars";
-      } else {
-        x.style.display = "block";
-        icon.className = "fa-solid fa-xmark";
-      }
+    <div class="mobileContainer">
+        <div class="topnav">
+            <a href="./index.html" class="active">Maini Tran</a>
+            <div id="myLinks">
+                <a href="./index.html#aboutMeMobile">About Me</a>
+                <a href="./works.html">Works</a>
+                <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+                    target="https://www.linkedin.com/in/maini-tran-937108227/"><i
+                        class="fa-brands fa-linkedin fa-lg"></i></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="burgerIcon"></i>
+            </a>
+        </div>
+    </div>
 
-    }
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            var icon = document.getElementById("burgerIcon");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                icon.className = "fa fa-bars";
+            } else {
+                x.style.display = "block";
+                icon.className = "fa-solid fa-xmark";
+            }
+
+        }
     </script>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
-<script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script>
 
-    let mybutton = document.getElementById("myBtn");
-    
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    $(document).on('beforeunload', function(){
-  $(this).scrollTop(0);
-});
-</script>
+        let mybutton = document.getElementById("myBtn");
 
-<div class="content">
-    <div class="container-left helloContainer">
-        <h1 class="hello">Hello, <br>I'm <span class="myName">Maini</span></h1>
-        <p class="helloText desktop">user interface designer and<br> this is my portfolio</p>
-        <p class="helloText mobile">user interface designer and<br> this is my portfolio</p>
-        <a href="./works.html" class="myWork cta desktop"> 
-            <p class="myWorktext desktop">
-                See my work
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
-            </p>
-        </a>
-    </div>
+        window.onscroll = function () { scrollFunction() };
 
-    <div class="container-right">
-        <img src="photos/maini.svg" alt="maini tran">
-    </div>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-<div class="helloTextmobile mobile">
-    <a href="./works.html" class="myWork">
-        <p class="myWorktext"> See my work <i class="fa-solid fa-arrow-right fa-lg"></i></p></a>
-</div>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        $(document).on('beforeunload', function () {
+            $(this).scrollTop(0);
+        });
+    </script>
 
-    <div class="pointer" id="AboutMe">
-        <i class="fa-solid fa-arrow-down fa-bounce fa-lg"></i>
-    </div>
-
-    <div class="container-left">
-        <h2 id="aboutMeMobile">A little about me</h2>
-        <p>Name's Maini Tran and I'm currently advancing through my last year as a digital design student at Metropolia University 
-            of Applied Sciences. <br><br>
-            
-            I pride myself on my proactive approach to challenges and striving for the best in my work. I aim for usability
-            and accessibility in the end product. I also want to bring creativity and functionality together to create designs
-            that leave a lasting impact. Additionally, I possess an understanding of front-end coding.<br><br>
-
-            My journey in the design realm has been marked by a commitment to continuous learning and growth. I am enthusiastic about
-         delving deeper into the field of UX/UI design and to always learn something new. Challenges and new opportunities always intrigue me as well.
-        
-           <br><br>Outside of work I enjoy photography, cocktail making and hosting crafting nights for my friends.</p>
-    </div>
-
-    <div class="container-right">
-        <div class="education">
-            <h3 class="experienceFirst">Education</h3>
-            <p class="experienceSecond">Bachelor's degree in Digital Design</p>
-            <p class="experienceThird">Metropolia University of<br> Applied Sciences</p>
-            <p class="experienceForth">2020 - Present</p>
-        
-        <h3 class="experienceFirst">Work experience</h3>
-            <p class="experienceSecond">UX/UI Designer </p>
-            <p class="experienceThird">Painovoimaa</p>
-            <p class="experienceForth">2023</p>
-
-            <p class="experienceSecond">UX/UI Designer </p>
-            <p class="experienceThird">Demoni ry</p>
-            <p class="experienceForth">2023</p>
-
-            <p class="experienceSecond">UX/UI Designer & Social Media Expert</p>
-            <p class="experienceThird">Notio Design</p>
-            <p class="experienceForth">2022</p>
+    <div class="content">
+        <div class="container-left helloContainer">
+            <h1 class="hello">Hello, <br>I'm <span class="myName">Maini</span></h1>
+            <p class="helloText desktop">user interface designer and<br> this is my portfolio</p>
+            <p class="helloText mobile">user interface designer and<br> this is my portfolio</p>
+            <a href="./works.html" class="myWork cta desktop">
+                <p class="myWorktext desktop">
+                    See my work
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </p>
+            </a>
         </div>
-    </div>
 
-    <h2>My basic project workflow</h2>
+        <div class="container-right">
+            <img src="photos/maini.svg" alt="maini tran">
+        </div>
+
+        <div class="helloTextmobile mobile">
+            <a href="./works.html" class="myWork">
+                <p class="myWorktext"> See my work <i class="fa-solid fa-arrow-right fa-lg"></i></p>
+            </a>
+        </div>
+
+        <div class="pointer" id="AboutMe">
+            <i class="fa-solid fa-arrow-down fa-bounce fa-lg"></i>
+        </div>
+
+        <div class="container-left">
+            <h2 id="aboutMeMobile">A little about me</h2>
+            <p>Name's Maini Tran and I'm currently advancing through my last year as a digital design student at
+                Metropolia University
+                of Applied Sciences. <br><br>
+
+                I pride myself on my proactive approach to challenges and striving for the best in my work. I aim for
+                usability
+                and accessibility in the end product. I also want to bring creativity and functionality together to
+                create designs
+                that leave a lasting impact. Additionally, I possess an understanding of front-end coding.<br><br>
+
+                My journey in the design realm has been marked by a commitment to continuous learning and growth. I am
+                enthusiastic about
+                delving deeper into the field of UX/UI design and to always learn something new. Challenges and new
+                opportunities always intrigue me as well.
+
+                <br><br>Outside of work I enjoy photography, cocktail making and hosting crafting nights for my friends.
+            </p>
+        </div>
+
+        <div class="container-right">
+            <div class="education">
+                <h3 class="experienceFirst">Education</h3>
+                <p class="experienceSecond">Bachelor's degree in Digital Design</p>
+                <p class="experienceThird">Metropolia University of<br> Applied Sciences</p>
+                <p class="experienceForth">2020 - Present</p>
+
+                <h3 class="experienceFirst">Work experience</h3>
+                <p class="experienceSecond">UX/UI Designer </p>
+                <p class="experienceThird">Painovoimaa</p>
+                <p class="experienceForth">2023</p>
+
+                <p class="experienceSecond">UX/UI Designer </p>
+                <p class="experienceThird">Demoni ry</p>
+                <p class="experienceForth">2023</p>
+
+                <p class="experienceSecond">UX/UI Designer & Social Media Expert</p>
+                <p class="experienceThird">Notio Design</p>
+                <p class="experienceForth">2022</p>
+            </div>
+        </div>
+
+        <h2>My basic project workflow</h2>
 
         <div class="understand box">
             <div class="container-workflowName">
                 <h4>Understand</h4>
             </div>
             <div class="container-workflowDesc">
-                <p>Gain knowledge of users, context, technologies, and the brand. 
-                    The problems users are facing have to be identified to later start working towards the solutions. 
+                <p>Gain knowledge of users, context, technologies, and the brand.
+                    The problems users are facing have to be identified to later start working towards the solutions.
                     Understanding the mission and goals is crucial to get the right answers.</p>
             </div>
         </div>
@@ -162,7 +176,7 @@
                 <h4>Research</h4>
             </div>
             <div class="container-workflowDesc">
-                <p>Gathering data by one on one interviews, focus groups, surveys and usability 
+                <p>Gathering data by one on one interviews, focus groups, surveys and usability
                     testing for example, and to base assumptions on real life evidence/data.</p>
             </div>
         </div>
@@ -172,7 +186,7 @@
                 <h4>Analyze</h4>
             </div>
             <div class="container-workflowDesc">
-                <p>Build user personas (these act as guides) on gathered data. Make user journeys and 
+                <p>Build user personas (these act as guides) on gathered data. Make user journeys and
                     user scenarios to see the bigger picture.</p>
             </div>
 
@@ -183,7 +197,7 @@
                 <h4>Design</h4>
             </div>
             <div class="container-workflowDesc">
-                <p>Create site maps, user flows and wireframes, these are low-fidelity mock-ups. 
+                <p>Create site maps, user flows and wireframes, these are low-fidelity mock-ups.
                     From these start building a prototype that takes shape from the collected data </p>
             </div>
         </div>
@@ -193,8 +207,8 @@
                 <h4>Launch</h4>
             </div>
             <div class="container-workflowDesc">
-                <p>Evaluate design with the users to obtain feedback and develop the product in the design team. 
-                Continuous flow of feedback is needed to launch the right product.</p>
+                <p>Evaluate design with the users to obtain feedback and develop the product in the design team.
+                    Continuous flow of feedback is needed to launch the right product.</p>
             </div>
         </div>
         <div class="evaluate box">
@@ -202,130 +216,132 @@
                 <h4>Evaluate</h4>
             </div>
             <div class="container-workflowDesc">
-             <p>Investigate where the process went right and if the solutions really solved the problems users were facing. With this knowledge, future projects will run even more smoothly.</p><br>
+                <p>Investigate where the process went right and if the solutions really solved the problems users were
+                    facing. With this knowledge, future projects will run even more smoothly.</p><br>
             </div>
         </div>
     </div>
 
-<div class="contentTwo">
+    <div class="contentTwo">
 
-<div class="skillsetBox">
-    <h2 class="skillsetHeader">My skillsets</h2>
+        <div class="skillsetBox">
+            <h2 class="skillsetHeader">My skillsets</h2>
 
-    <div class="skillset">
-        <div class="pSkillet">
-        <i class="fa-solid fa-magnifying-glass fa-4x icon"></i>
-        <p class="pSkillet">
-            Benchmarking<br>
-            User Research<br>
-            Workshops<br>
-            User Testing
-        </p>
+            <div class="skillset">
+                <div class="pSkillet">
+                    <i class="fa-solid fa-magnifying-glass fa-4x icon"></i>
+                    <p class="pSkillet">
+                        Benchmarking<br>
+                        User Research<br>
+                        Workshops<br>
+                        User Testing
+                    </p>
+                </div>
+
+                <div class="pSkillet">
+                    <i class="fa-regular fa-pen-to-square fa-4x icon"></i>
+                    <p class="pSkillet">
+                        Wireframing<br>
+                        User Flows<br>
+                        Prototyping<br>
+                        Design Systems
+                    </p>
+                </div>
+
+                <div class="pSkillet">
+                    <i class="fa-solid fa-hashtag fa-4x icon"></i>
+                    <p class="pSkillet">
+                        Content Creation<br>
+                        Social media Analytics<br>
+                        Marketing Strategies<br>
+                        Competitor Analysis</p>
+                </div>
+            </div>
         </div>
 
-        <div class="pSkillet">
-            <i class="fa-regular fa-pen-to-square fa-4x icon"></i>
-        <p class="pSkillet">
-            Wireframing<br>
-            User Flows<br>
-            Prototyping<br>
-            Design Systems
-        </p>
-    </div>
+        <div class="toolsetBox">
+            <h2>and toolbox includes</h2>
 
-    <div class="pSkillet">
-        <i class="fa-solid fa-hashtag fa-4x icon"></i>
-        <p class="pSkillet">
-            Content Creation<br>
-            Social media Analytics<br>
-            Marketing Strategies<br>
-            Competitor Analysis</p>
+            <div class="toolsetInsidebox">
+                <div class="tooltip">
+                    <span class="tooltiptext">Figma</span>
+                    <img class="toolsPic figma" src="photos/icons/figma.png" alt="figma">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Miro</span>
+                    <img class="toolsPic miro" src="photos/icons/miro.png" alt="miro">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Adobe XD</span>
+                    <img class="toolsPic" src="photos/icons/xd.png" alt="xd">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Adobe Illustrator</span>
+                    <img class="toolsPic aillustratr" src="photos/icons/ai.png" alt="ai">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Adobe Photoshop</span>
+                    <img class="toolsPic photoshop" src="photos/icons/ps.png" alt="ps">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Adobe InDesign</span>
+                    <img class="toolsPic indesign" src="photos/icons/id.png" alt="id">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Adobe Lightroom</span>
+                    <img class="toolsPic lightroom" src="photos/icons/lr.png" alt="lr">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">WordPress</span>
+                    <img class="toolsPic wordpress" src="photos/icons/wp.png" alt="wp">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Canva</span>
+                    <img class="toolsPic canva" src="photos/icons/canva.png" alt="canva">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Microsoft Office</span>
+                    <img class="toolsPic microsoftoffice" src="photos/icons/microsoftoffice.png" alt="microsoftoffice">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">ChatGPT</span>
+                    <img class="toolsPic gpt" src="photos/icons/gpt.png" alt="gpt">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">HTML & CSS coding</span>
+                    <img class="toolsPic htmlCSS" src="photos/icons/html.png" alt="html">
+                </div>
+            </div>
         </div>
-
-    </div>
-
-    </div>
-
-    <div class="toolsetBox">
-        <h2>and toolbox includes</h2>
-
-    <div class="toolsetInsidebox">
-        <div class="tooltip">
-            <span class="tooltiptext">Figma</span>
-            <img class="toolsPic figma" src="photos/icons/figma.png" alt="figma">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Miro</span>
-            <img class="toolsPic miro" src="photos/icons/miro.png" alt="miro">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Adobe XD</span>
-            <img class="toolsPic" src="photos/icons/xd.png" alt="xd">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Adobe Illustrator</span>
-            <img class="toolsPic aillustratr" src="photos/icons/ai.png" alt="ai">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Adobe Photoshop</span>
-            <img class="toolsPic photoshop" src="photos/icons/ps.png" alt="ps">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Adobe InDesign</span>
-            <img class="toolsPic indesign" src="photos/icons/id.png" alt="id">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Adobe Lightroom</span>
-            <img class="toolsPic lightroom" src="photos/icons/lr.png" alt="lr">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">WordPress</span>
-            <img class="toolsPic wordpress" src="photos/icons/wp.png" alt="wp">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Canva</span>
-            <img class="toolsPic canva" src="photos/icons/canva.png" alt="canva">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">Microsoft Office</span>
-            <img class="toolsPic microsoftoffice" src="photos/icons/microsoftoffice.png" alt="microsoftoffice">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">ChatGPT</span>
-            <img class="toolsPic gpt" src="photos/icons/gpt.png" alt="gpt">
-        </div>
-        <div class="tooltip">
-            <span class="tooltiptext">HTML & CSS coding</span>
-            <img class="toolsPic htmlCSS" src="photos/icons/html.png" alt="html">
-        </div>
-        </div>
-     </div>
     </div>
 
     <div class="buttonPlace mobile">
-        <a href="./works.html" class="button myWork">See my work <i class="fa-solid fa-arrow-right fa-lg" style="padding-left: 15px;"></i></a>
-        </div>
+        <a href="./works.html" class="button myWork">See my work <i class="fa-solid fa-arrow-right fa-lg"
+                style="padding-left: 15px;"></i></a>
+    </div>
 
-        <div class="buttonPlace buttonBottom desktop">
-        <a href="./works.html" class="myWork cta desktop"> 
+    <div class="buttonPlace buttonBottom desktop">
+        <a href="./works.html" class="myWork cta desktop">
             <p class="myWorktext desktop">
                 See my work
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
             </p>
         </a>
     </div>
-</div>
+    </div>
 
-<footer>
-    <h2 class="contact">Contact Me</h2>
-    <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
-    <a href="https://www.linkedin.com/in/maini-tran-937108227/" target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x" style="padding: 5px;"></i></a>
-    <h3 class="nameLogo">Maini<br> Tran</h3>
-    <p>I made dis.</p>
-  </footer>
-  
+    <footer>
+        <h2 class="contact">Contact Me</h2>
+        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
+        <a href="https://www.linkedin.com/in/maini-tran-937108227/"
+            target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x"
+                style="padding: 5px;"></i></a>
+        <h3 class="nameLogo">Maini<br> Tran</h3>
+        <p>I made dis.</p>
+    </footer>S
 </body>
+
 </html>
