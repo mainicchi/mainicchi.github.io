@@ -75,6 +75,17 @@ p {
   padding: 15px 0 15px 0;
 }
 
+.header {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.headerVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .sticky {
   position: fixed;
   top: 0;

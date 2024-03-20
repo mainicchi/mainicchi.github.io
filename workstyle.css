@@ -105,6 +105,17 @@ p {
   }
 }
 
+.header {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.headerVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -146,6 +157,8 @@ p {
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
 }
 
 .middleBox {
@@ -161,7 +174,8 @@ p {
 }
 
 .container-left:hover .imgBorder {
-  opacity: 0.5;
+  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
 }
 
 .container-left:hover .middleBox {
@@ -170,7 +184,8 @@ p {
 }
 
 .container-right:hover .imgBorder {
-  opacity: 0.5;
+  filter: brightness(30%);
+  -webkit-filter: brightness(30%);
 }
 
 .container-right:hover .middleBox {
@@ -179,11 +194,9 @@ p {
 }
 
 .middleText {
-  background-color: #a5be6a;
-  color: #291900;
+  color: #a5be6a;
   font-size: 16px;
   padding: 12px 18px;
-  border-radius: 20px;
 }
 
 .headText {

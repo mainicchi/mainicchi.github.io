@@ -59,6 +59,31 @@
             }
 
         }
+
+        function checkForVisibility() {
+            var headers = document.querySelectorAll(".header");
+            headers.forEach(function (header) {
+                if (isElementInViewport(header)) {
+                    header.classList.add("headerVisible");
+                }
+            });
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top <= 350 &&
+                rect.left >= 0
+            );
+        }
+
+        if (window.addEventListener) {
+            addEventListener("DOMContentLoaded", checkForVisibility, false);
+            addEventListener("load", checkForVisibility, false);
+            addEventListener("scroll", checkForVisibility, false);
+        }
+
     </script>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
@@ -86,12 +111,12 @@
     <div class="content">
         <h1 class="headText">Here are some of<br> my <span class="myWorks">works</span></h1>
 
-        <div class="container-left">
+        <div class="container-left header">
             <div class="hoverText">
                 <a class="imgLink" href="./painovoimaa.html"><img class="imgBorder" src="photos/painovoimaa.png"
                         alt="painovoimaa" width="560" height="370"></a>
                 <a class="middleBox" href="./painovoimaa.html">
-                    <h3 class="middleText">Accessibility, <br>UX/UI, <br>WordPress</h3>
+                    <h3 class="middleText">Accessibility │ UX/UI │ WordPress</h3>
                 </a>
             </div>
             <h2>Painovoimaa</h2>
@@ -100,12 +125,12 @@
             <a href="./painovoimaa.html" class="button workLink">Read more</a>
         </div>
 
-        <div class="container-right">
+        <div class="container-right header">
             <div class="hoverText">
                 <a class="imgLink" href="./demoniry.html"><img class="imgBorder" src="photos/demoniry.png"
                         alt="demoni ry" width="560" height="370"></a>
                 <a class="middleBox" href="./demoniry.html">
-                    <h3 class="middleText">Accessibility,<br> UI/UX, <br>WordPress</h3>
+                    <h3 class="middleText">Accessibility │  UI/UX │ WordPress</h3>
                 </a>
             </div>
             <h2>Demoni ry</h2>
@@ -114,12 +139,12 @@
             <a href="./demoniry.html" class="button workLink">Read more</a>
         </div>
 
-        <div class="container-left">
+        <div class="container-left header">
             <div class="hoverText">
                 <a class="imgLink" href="./intranet.html"><img class="imgBorder" src="photos/intranet.png"
                         alt="metropolia intranet" width="560" height="370"></a>
                 <a class="middleBox" href="./intranet.html">
-                    <h3 class="middleText">Service Design,<br> User Research</h3>
+                    <h3 class="middleText">Service Design │ User Research</h3>
                 </a>
             </div>
             <h2>Metropolia Intranet</h2>
@@ -128,12 +153,12 @@
             <a href="./intranet.html" class="button">Read more</a>
         </div>
 
-        <div class="container-right">
+        <div class="container-right header">
             <div class="hoverText">
                 <a class="imgLink" href="./saarnit.html"><img class="imgBorder" src="photos/saarnit.png"
                         alt="saarni likeit" width="560" height="370"></a>
                 <a class="middleBox" href="./saarnit.html">
-                    <h3 class="middleText">Accessibility,<br> UI/UX, <br>Prototyping</h3>
+                    <h3 class="middleText">Accessibility │ UI/UX │ Prototyping</h3>
                 </a>
             </div>
             <h2>Saarni Likeit Oy</h2>
@@ -142,12 +167,12 @@
             <a href="./saarnit.html" class="button">Read more</a>
         </div>
 
-        <div class="container-left">
+        <div class="container-left header">
             <div class="hoverText">
                 <a class="imgLink" href="./draama.html"><img class="imgBorder" src="photos/draama.png"
                         alt="draama gallery" width="560" height="370"></a>
                 <a class="middleBox" href="./draama.html">
-                    <h3 class="middleText">Content Creation,<br> WordPress</h3>
+                    <h3 class="middleText">Content Creation │ WordPress</h3>
                 </a>
             </div>
             <h2>Drama Gallery</h2>
@@ -156,12 +181,12 @@
             <a href="./draama.html" class="button">Read more</a>
         </div>
 
-        <div class="container-right">
+        <div class="container-right header">
             <div class="hoverText">
                 <a class="imgLink" href="./lolykontti.html"><img class="imgBorder" src="photos/loylykontti.png"
                         alt="lolykontti" width="560" height="370"></a>
                 <a class="middleBox" href="./lolykontti.html">
-                    <h3 class="middleText">Social Media Marketing,<br> Content Creation</h3>
+                    <h3 class="middleText">Social Media Marketing │ Content Creation</h3>
                 </a>
             </div>
             <h2>Löylykontti</h2>
@@ -170,12 +195,12 @@
             <a href="./lolykontti.html" class="button">Read more</a>
         </div>
 
-        <div class="container-left">
+        <div class="container-left header">
             <div class="hoverText">
                 <a class="imgLink" href="./oppari.html"><img class="imgBorder" src="photos/oppari.png"
                         alt="digital design bachelor thesis" width="560" height="370"></a>
                 <a class="middleBox" href="./oppari.html">
-                    <h3 class="middleText">User Research,<br> UI Design</h3>
+                    <h3 class="middleText">User Research │ UI Design</h3>
                 </a>
             </div>
             <h2>Digital Design Bachelor Thesis</h2>
@@ -184,12 +209,12 @@
             <a href="./oppari.html" class="button">Read more</a>
         </div>
 
-        <div class="container-right">
+        <div class="container-right header">
             <div class="hoverText">
                 <a class="imgLink" href="./talvipuutarha.html"><img class="imgBorder" src="photos/talvipuutarha.png"
                         alt="talvipuutarha" width="560" height="370"></a>
                 <a class="middleBox" href="./talvipuutarha.html">
-                    <h3 class="middleText">Social Media Marketing,<br> Content Creation</h3>
+                    <h3 class="middleText">Social Media Marketing │ Content Creation</h3>
                 </a>
             </div>
             <h2>Talvipuutarha</h2>
