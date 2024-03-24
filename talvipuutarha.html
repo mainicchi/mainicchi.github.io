@@ -56,8 +56,32 @@
                 x.style.display = "block";
                 icon.className = "fa-solid fa-xmark";
             }
-
         }
+
+        function checkForVisibility() {
+            var headers = document.querySelectorAll(".header");
+            headers.forEach(function (header) {
+                if (isElementInViewport(header)) {
+                    header.classList.add("headerVisible");
+                }
+            });
+        }
+
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top <= 350 &&
+                rect.left >= 0
+            );
+        }
+
+        if (window.addEventListener) {
+            addEventListener("DOMContentLoaded", checkForVisibility, false);
+            addEventListener("load", checkForVisibility, false);
+            addEventListener("scroll", checkForVisibility, false);
+        }
+        
     </script>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
@@ -187,15 +211,19 @@
 
     </div>
 
-    <footer>
-        <h2 class="contact">Contact Me</h2>
-        <a href="mailto:maini.tranthu@gmail.com"><i class="fa-regular fa-envelope fa-3x" style="padding: 5px;"></i></a>
-        <a href="https://www.linkedin.com/in/maini-tran-937108227/"
-            target="https://www.linkedin.com/in/maini-tran-937108227/"><i class="fa-brands fa-linkedin fa-3x"
-                style="padding: 5px;"></i></a>
-        <h3 class="nameLogo">Maini<br> Tran</h3>
-        <p>I made dis.</p>
-    </footer>
+    <footer class="header">
+        <div class="container-left">
+            <h2 class="contact">Contact Me</h2>
+            <p><a class="link" href="mailto:maini.tranthu@gmail.com">maini.tranthu@gmail.com</a></p>
+            <p><a class="link" href="https://www.linkedin.com/in/maini-tran-937108227/">Linkedin</a></p>
+            <p class="madeit desktop">I made dis.</p>
+        </div>
+        <div class="container-right">
+            <p class="footerText">Need a digital designer?<br>
+                Let me know and see if I’m the one.</p>
+        </div>
+        <p class="madeit mobile">I made dis.</p>
+        </footer>
 
 </body>
 
