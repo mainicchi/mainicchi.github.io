@@ -62,7 +62,7 @@ p {
 .pText {
   margin-block-start: 0;
   padding: 0px 0 10px 0;
-  height: 110px;
+  height: 95px;
 }
 
 .navbar {
@@ -424,6 +424,10 @@ footer {
     margin-block-start: 0;
     font-size: 16px;
     height: auto;
+  }
+
+  .pText {
+    height: 110px;
   }
 
 
