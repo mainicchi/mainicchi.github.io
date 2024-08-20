@@ -66,7 +66,7 @@ p {
   font-weight: 400;
   font-style: normal;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: sticky;
   top: 0;
   padding: 0 10px 0 10px;
@@ -123,6 +123,14 @@ p {
   .interduction {
     width: 40%;
     padding-top: 70px;
+  }
+  .container-right {
+    width: 45%;
+    padding-top: 75px;
+
+    .info {
+      padding-bottom: 40px;
+    }
   }
 
   .mainPic {
@@ -437,6 +445,7 @@ footer {
     .interduction {
       width: 100%;
     }
+    
 
     .mainPic {
       display: none !important;
