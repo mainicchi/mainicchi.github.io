@@ -13,11 +13,12 @@ html {
   font-size: 120px;
 }
 
+.myName {
+  font-family: myFont;
+}
+
 body {
-  background-color: #f3edd8;
-  background-image: url(./photos/backround3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #F8F4EE;
   margin: 0;
 }
 
@@ -32,7 +33,7 @@ h1 {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   color: #291900;
   font-size: 30px;
@@ -65,8 +66,12 @@ p {
   height: 95px;
 }
 
+.helloText {
+  font-size: 42px;
+}
+
 .navbar {
-  background-color: #f3edd8;
+  background-color: #F8F4EE;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -90,6 +95,10 @@ p {
 
 .navbarIcons {
   padding: 15px 5px;
+}
+
+.navCenter {
+  align-items: center;
 }
 
 @media only screen and (min-width: 420px) {
@@ -118,6 +127,16 @@ p {
 .headerVisible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.mainPhoto {
+  align-items: center;
+
+  > img {
+    max-width: 100%;
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .content {
@@ -247,12 +266,9 @@ p {
   }
 }
 
-.imgBorder {
-  border-radius: 5%;
-}
 
 .button {
-  background-color: #f3edd8;
+  background-color: #F8F4EE;
   color: #291900;
   border: solid 2px;
   padding: 10px 26px;
@@ -266,7 +282,7 @@ p {
 
 .button:hover {
   background-color: #291900;
-  color: #f3edd8;
+  color: #F8F4EE;
   border-color: #291900;
 }
 
@@ -280,7 +296,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #291900;
-  padding: 15% 15% 0 15%;
+  padding: 5% 15% 0 15%;
 
   .contact {
     font-family: myFont;
@@ -349,6 +365,14 @@ footer {
     display: none !important;
   }
 
+  .hello {
+    font-size: 80px;
+  }
+
+  .helloText {
+    font-size: 18px;
+  }
+
   .mobile-container {
     max-width: 480px;
     margin: auto;
@@ -376,7 +400,7 @@ footer {
     text-decoration: none;
     font-size: 20px;
     display: block;
-    background-color: #f3edd8;
+    background-color: #F8F4EE;
   }
 
   .topnav a.icon {
@@ -409,7 +433,6 @@ footer {
 
   h2 {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
     font-style: normal;
     color: #291900;
     font-size: 24px;

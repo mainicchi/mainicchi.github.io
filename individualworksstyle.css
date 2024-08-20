@@ -9,10 +9,7 @@ html {
 }
 
 body {
-  background-color: #f3edd8;
-  background-image: url(./photos/backround3.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #F8F4EE;
   margin: 0;
 }
 
@@ -63,7 +60,7 @@ p {
 }
 
 .navbar {
-  background-color: #f3edd8;
+  background-color: #F8F4EE;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -229,7 +226,7 @@ p {
 }
 
 .button {
-  background-color: #f3edd8;
+  background-color: #F8F4EE;
   color: #291900;
   border: solid 2px;
   padding: 10px 26px;
@@ -243,7 +240,7 @@ p {
 
 .button:hover {
   background-color: #291900;
-  color: #f3edd8;
+  color: #F8F4EE;
   border-color: #291900;
 }
 
@@ -302,7 +299,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   color: #291900;
-  padding: 15% 15% 0 15%;
+  padding: 5% 15% 0 15%;
 
   .footerText {
     font-size: 24px;
@@ -404,7 +401,7 @@ footer {
     text-decoration: none;
     font-size: 20px;
     display: block;
-    background-color: #f3edd8;
+    background-color: #F8F4EE;
   }
 
   .topnav a.icon {
