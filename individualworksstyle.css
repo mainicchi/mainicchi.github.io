@@ -267,6 +267,7 @@ p {
 .imgBorder {
   max-width: 100%;
   padding-top: 20px;
+  padding-bottom: 10%;
 }
 .imgBorder:hover {
   cursor: pointer;
